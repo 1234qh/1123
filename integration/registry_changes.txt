@@ -1,0 +1,9 @@
+Register these modules in OpenPCDet's existing registries:
+
+pcdet/models/detectors/__init__.py:
+  from .centerpoint_voxel_temporal import CenterPointVoxelTemporal
+  __all__['CenterPointVoxelTemporal'] = CenterPointVoxelTemporal
+
+pcdet/models/backbones_3d/vfe/__init__.py:
+  from .temporal_mean_vfe import CenterPointFiveFeatureVFE, TemporalMeanVFE, CenterPointSweepVFE
+  __all__['CenterPointSweepVFE'] = CenterPointSweepVFE
